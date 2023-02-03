@@ -1,4 +1,4 @@
-Copyright (c) Ryan Boland & Contributors
+Copyright (c) Ryan Boland & contributors
 Copyright (c) Natsuki
 Copyright (c) TableCheck
 
