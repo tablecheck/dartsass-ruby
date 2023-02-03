@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.version       = SassC::VERSION
   spec.authors       = ['Ryan Boland', 'なつき', 'Johnny Shields']
   spec.email         = ['ryan@tanookilabs.com', 'i@ntk.me']
-  spec.summary       = 'Use Dart Sass with Ruby and Sprockets'
-  spec.description   = 'Use Dart Sass with Ruby and Sprockets'
+  spec.summary       = 'Use Dart Sass with Ruby'
+  spec.description   = 'Use Dart Sass with Ruby'
   spec.homepage      = 'https://github.com/tablecheck/dartsass-ruby'
   spec.license       = 'MIT'
   spec.metadata      = {
@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir['lib/**/*.rb'] + %w[LICENSE.txt README.md]
   spec.test_files = spec.files.grep(%r{^(test|spec|features)/})
   spec.required_ruby_version = '>= 2.6.0'
+  spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency 'sass-embedded', '~> 1.54'
 

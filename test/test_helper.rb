@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
-require 'sassc'
-
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+require 'dartsass-ruby'
 require 'fileutils'
 require 'minitest/autorun'
 require 'minitest/around/unit'
