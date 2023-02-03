@@ -31,11 +31,12 @@ gem 'dartsass-sprockets'
 
 ### Upgrading to Dart Sass
 
-The interface of [sassc-ruby](https://github.com/sass/sassc-ruby) is largely unchanged, however:
+This gem is a drop-in replacement to [sassc-ruby](https://github.com/sass/sassc-ruby).
+Note the following differences:
 
 1. Option `style: :nested` and `style: :compact` behave as `style: :expanded`. Use `style: :compressed` for minification.
-2. Option `:precision` is ignored.
-3. Option `:line_comments` is ignored.
+2. Option `:precision` is ignored, as Dart Sass sets it to a sufficiently high value.
+3. Option `:line_comments` is ignored and will always be disabled.
 4. `Sass2Scss` functionality has been removed.
 
 See [the dart-sass documentation](https://github.com/sass/dart-sass#behavioral-differences-from-ruby-sass) for other differences.
