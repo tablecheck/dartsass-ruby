@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
     'source_code_uri' => "#{spec.homepage}/tree/v#{spec.version}"
   }
 
-  spec.files = Dir['lib/**/*.rb'] + %w[LICENSE README.md]
+  spec.files = Dir['lib/**/*.rb'] + %w[LICENSE.txt README.md]
   spec.test_files = spec.files.grep(%r{^(test|spec|features)/})
   spec.required_ruby_version = '>= 2.6.0'
 

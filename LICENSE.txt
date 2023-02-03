@@ -1,5 +1,6 @@
 Copyright (c) Ryan Boland & Contributors
-Copyright (c) 2022 なつき
+Copyright (c) Natsuki
+Copyright (c) TableCheck
 
 MIT License
 
