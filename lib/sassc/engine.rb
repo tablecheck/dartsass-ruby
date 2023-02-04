@@ -182,10 +182,12 @@ module SassC
 
       url = URL.parse(source_map_file_url || file_url)
       data = JSON.parse(source_map)
-      data["file"] = if validate_source_map_path?
-        URL.parse(output_url).route_from(url).to_s
-      else
-        output_url
+      if output_url
+        data["file"] = if validate_source_map_path?
+          URL.parse(output_url).route_from(url).to_s
+        else
+          output_url
+        end
       end
       data["sources"].map! do |source|
         if source.start_with?(Protocol::FILE) && validate_source_map_path?
