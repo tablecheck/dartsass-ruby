@@ -5,25 +5,23 @@
 
 Use [Dart Sass](https://sass-lang.com/dart-sass) with Ruby.
 
-This gem is a fork of [sass/sassc-ruby](https://github.com/sass/sassc-ruby)
-which maintains API compatibility but delegates to the
+This gem is a fork of [sass/sassc-ruby](https://github.com/sass/sassc-ruby).
+It is a compatibility shim which attempts to replicate SassC functionality
+on Dart Sass, providing an easy upgrade path. Under-the-hood, this gem delegates to the
 [sass-embedded gem](https://github.com/ntkme/sass-embedded-host-ruby)
-which provides native binaries for Dart Sass (instead of the libsass
-C implmentation.)
+which provides native binaries for Dart Sass instead of SassC (libsass).
+
+**Important:** When Dart Sass 2.0 is released, this gem will be sunset
+and relevant code will be migrated to [dartsass-sprockets](https://github.com/tablecheck/dartsass-sprockets).
+Please see [this issue](https://github.com/tablecheck/dartsass-sprockets/issues/2) for details.
 
 For ease of upgrading, the root namespace `::SassC` is still used by this gem,
-although it is now a misnomer. This is planned to be renamed in a future
-major version release.
+although it is now a misnomer.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'dartsass-ruby'
-```
-
-Rails/Sprockets users should instead add [dartsass-sprockets](https://github.com/tablecheck/dartsass-sprockets):
+Rails/Sprockets users are recommended to use [dartsass-sprockets](https://github.com/tablecheck/dartsass-sprockets)
+instead of this gem directly. In your Gemfile:
 
 ```ruby
 gem 'dartsass-sprockets'
@@ -59,7 +57,7 @@ SassC::Engine.new(".klass1, .klass2 { color: :red; }", style: :compressed).rende
 ## Credits
 
 * This gem is maintained and used in production by [TableCheck](https://www.tablecheck.com/en/join). (We'd be very glad if the Sass organization could take over maintainership in the future!)
-* Kudos to [@ntkme](https://github.com/ntkme) for dart-sass support.
+* Kudos to [@ntkme](https://github.com/ntkme) for Dart Sass support and maintaining the [sass-embedded gem](https://github.com/ntkme/sass-embedded-host-ruby).
 * Credit to [Ryan Boland](https://ryanboland.com) and the authors of the original
   [sass/sassc-ruby](https://github.com/sass/sassc-ruby) gem.
 * See our [awesome contributors](https://github.com/tablecheck/sassc-ruby/graphs/contributors).
