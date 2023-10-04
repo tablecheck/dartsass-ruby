@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 2.6.0'
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency 'sass-embedded', '~> 1.54'
+  spec.add_runtime_dependency 'sass-embedded', '~> 1.54', '< 1.67'
 
   spec.add_development_dependency 'minitest', '~> 5.16.0'
   spec.add_development_dependency 'minitest-around', '~> 0.5.0'
