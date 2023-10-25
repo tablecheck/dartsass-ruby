@@ -1,3 +1,6 @@
+- **3.0.2**
+  - [Lock max sass-embedded dependency version](https://github.com/tablecheck/dartsass-ruby/pull/6)
+
 - **3.0.1**
   - [Fix source map URL regression](https://github.com/tablecheck/dartsass-ruby/pull/4)
 
