@@ -1,5 +1,9 @@
 # Dart Sass for Ruby
 
+**Notice: This gem is deprecated and no longer maintained.** Please use [sassc-embedded-shim-ruby](https://github.com/sass-contrib/sassc-embedded-shim-ruby). Note sassc-embedded-shim-ruby is a misnomer, it actually provides Dart Sass functionality.
+
+---
+
 [![build](https://github.com/tablecheck/dartsass-ruby/actions/workflows/build.yml/badge.svg)](https://github.com/tablecheck/dartsass-ruby/actions/workflows/build.yml)
 [![gem](https://badge.fury.io/rb/dartsass-ruby.svg)](https://rubygems.org/gems/dartsass-ruby)
 
